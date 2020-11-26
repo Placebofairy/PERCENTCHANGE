@@ -1,0 +1,20 @@
+PROGRAM:PRCNTCHN
+:Menu(“WHAT DO YOU WANT?”,“PERCENT CHANGE”,1,“NEW”,2,“OLD”,3)
+:Lbl1
+:Input“O=”,O
+:Input“N=”,N
+:(100((N-O)/(O)))→S
+:Disp“P=”,S
+:Stop
+:Lbl2
+:Input“P=”,P
+:Input“O=”,O
+:(O(P/100)+O)→S
+:Disp“N=”,S
+:Stop
+:Lbl3
+:Input“P=”,P
+:Input“N=”,N
+((100*N)/(P+100))→S
+:Disp“O=”,S
+:Stop
